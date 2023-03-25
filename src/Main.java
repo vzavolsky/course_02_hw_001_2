@@ -8,7 +8,14 @@ public class Main {
         В методе main объявите переменную типа Person под названием person и запишите новый объект типа Person.
         Присвойте строке name значение Lyapis, строке surname значение — Trubetskoy.
         В следующей строке вызовите метод changePerson и передайте в него эту переменную.*/
-
+        Person person = new Person();
+        person.name = "Lyapis";
+        person.surname = "Trubetskoy";
+        System.out.println(person);
+        System.out.println("person.name = " + person.name);
+        person.changePerson(person);
+        System.out.println(person);
+        System.out.println("person.name = " + person.name);
     }
 
 }
